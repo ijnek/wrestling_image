@@ -1,0 +1,9 @@
+repositories:
+  biped_interfaces:
+    type: git
+    url: git@github.com:ros-sports/biped_interfaces.git
+    version: rolling
+  walk:
+    type: git
+    url: git@github.com:ijnek/walk.git
+    version: rolling
