@@ -24,7 +24,6 @@ WORKDIR /home/$USERNAME
 # Install Webots
 # We install keyboard-configuration first, with DEBIAN_FRONTEND disabled because installing keyboard-configuration can lock up the docker build
 RUN sudo -E apt install -y wget software-properties-common
-RUN wget https://github.com/cyberbotics/webots/releases/download/R2023b/webots_2023b_amd64.deb
 RUN wget -qO- https://cyberbotics.com/Cyberbotics.asc | sudo apt-key add -
 RUN sudo apt-add-repository 'deb https://cyberbotics.com/debian/ binary-amd64/'
 RUN sudo apt update
