@@ -3,6 +3,18 @@ repositories:
     type: git
     url: git@github.com:ros-sports/biped_interfaces.git
     version: rolling
+  nao_ik:
+    type: git
+    url: git@github.com:ijnek/nao_ik
+    version: rolling
+  nao_lola:
+    type: git
+    url: git@github.com:ros-sports/nao_lola
+    version: rolling
+  nao_phase_provider:
+    type: git
+    url: git@github.com:ijnek/nao_phase_provider
+    version: rolling
   walk:
     type: git
     url: git@github.com:ijnek/walk.git
