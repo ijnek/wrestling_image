@@ -15,6 +15,10 @@ repositories:
     type: git
     url: git@github.com:ijnek/nao_phase_provider
     version: rolling
+  sole_poses_ims:
+    type: git
+    url: git@github.com:ijnek/sole_poses_ims
+    version: rolling
   walk:
     type: git
     url: git@github.com:ijnek/walk.git
