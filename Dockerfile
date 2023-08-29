@@ -32,8 +32,8 @@ RUN sudo -E apt install webots -y
 # Clone WebotsLolaController
 # RUN git clone https://github.com/Bembelbots/WebotsLoLaController.git
 
-# Clone ijnek_wrestle
-RUN git clone git@github.com:ijnek/ijnek_wrestle.git
+# Copy ijnek_wrestle into container
+COPY --chown=$USERNAME:$USERNAME ijnek_wrestle ijnek_wrestle/.
 
 # Rosdep update
 RUN rosdep update
