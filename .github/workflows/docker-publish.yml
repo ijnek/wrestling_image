@@ -85,6 +85,10 @@ jobs:
           mkdir src
           vcs import --recursive src < src.repos
 
+      # Clone ijnek_wrestle
+      - name: Clone ijnek_wrestle
+        run: git clone git@github.com:ijnek/ijnek_wrestle.git
+
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
