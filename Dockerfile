@@ -30,7 +30,10 @@ RUN sudo apt update
 RUN sudo -E apt install webots -y
 
 # Clone WebotsLolaController
-RUN git clone https://github.com/Bembelbots/WebotsLoLaController.git
+# RUN git clone https://github.com/Bembelbots/WebotsLoLaController.git
+
+# Clone ijnek_wrestle
+RUN git clone git@github.com:ijnek/ijnek_wrestle.git
 
 # Rosdep update
 RUN rosdep update
