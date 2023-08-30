@@ -18,6 +18,7 @@ repositories:
   naosoccer_pos_action:
     type: git
     url: git@github.com:ijnek/naosoccer_pos_action
+    version: rolling
   walk:
     type: git
     url: git@github.com:ijnek/walk.git
