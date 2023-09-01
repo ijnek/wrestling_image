@@ -56,4 +56,5 @@ RUN echo 'export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity}] {file_name}:{line_n
 RUN echo 'export RCUTILS_COLORIZED_OUTPUT=1' >> ~/.bashrc
 
 # Source and build
-RUN . /opt/ros/rolling/setup.bash && colcon build --symlink-install
+SHELL ["/bin/bash", "-c"]
+RUN source /opt/ros/rolling/setup.bash && colcon build --symlink-install
