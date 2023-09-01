@@ -3,6 +3,10 @@ repositories:
     type: git
     url: git@github.com:ros-sports/biped_interfaces.git
     version: rolling
+  nao:
+    type: git
+    url: git@github.com:ijnek/nao
+    version: rolling
   nao_ik:
     type: git
     url: git@github.com:ijnek/nao_ik
@@ -23,6 +27,10 @@ repositories:
     type: git
     url: git@github.com:ijnek/walk.git
     version: ijnek-lifecycle-node
+  webots_nao_camera:
+    type: git
+    url: git@github.com:ijnek/webots_nao_camera
+    version: rolling
   wrestle:
     type: git
     url: git@github.com:ijnek/wrestle.git
