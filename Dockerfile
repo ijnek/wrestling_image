@@ -54,3 +54,6 @@ RUN rosdep install -y --from-paths src --ignore-src --rosdistro rolling -r || tr
 # Set some ROS 2 logging env variables in ~/.bashrc
 RUN echo 'export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity}] {file_name}:{line_number} - {message}"' >> ~/.bashrc
 RUN echo 'export RCUTILS_COLORIZED_OUTPUT=1' >> ~/.bashrc
+
+# Build
+RUN colcon build --symlink-install
