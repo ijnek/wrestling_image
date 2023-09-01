@@ -58,3 +58,6 @@ RUN echo 'export RCUTILS_COLORIZED_OUTPUT=1' >> ~/.bashrc
 # Source and build
 SHELL ["/bin/bash", "-c"]
 RUN source /opt/ros/rolling/setup.bash && colcon build --symlink-install
+
+# Change directory to user home
+WORKDIR /home/$USERNAME
