@@ -22,7 +22,7 @@ repositories:
   walk:
     type: git
     url: git@github.com:ijnek/walk.git
-    version: rolling
+    version: ijnek-lifecycle-node
   wrestle:
     type: git
     url: git@github.com:ijnek/wrestle.git
