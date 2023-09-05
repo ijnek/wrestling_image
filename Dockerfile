@@ -58,8 +58,11 @@ COPY --chown=$USERNAME:$USERNAME colcon/defaults.yaml /home/$USERNAME/.colcon/de
 RUN echo 'export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity}] {file_name}:{line_number} - {message}"' >> ~/.bashrc
 RUN echo 'export RCUTILS_COLORIZED_OUTPUT=1' >> ~/.bashrc
 
-# Source and build
+# Switch to bash
 SHELL ["/bin/bash", "-c"]
+# Enable flag to ignore the absence of the meshes and texture directories, used in nao_description's CMakeLists.txt
+ENV IGNORE_MESHES_AND_TEXTURE_DIRS=1
+# Source and build
 RUN source /opt/ros/rolling/setup.bash && colcon build --symlink-install
 
 # Change directory to user home
