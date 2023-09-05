@@ -51,6 +51,9 @@ COPY --chown=$USERNAME:$USERNAME src src/.
 # Install dependencies ("|| true" is required to prevent a failure return code that happens if rosdep couldn't find some binary dependencies)
 RUN rosdep install -y --from-paths src --ignore-src --rosdistro rolling -r || true
 
+# Copy the colcon defaults file
+COPY --chown=$USERNAME:$USERNAME colcon/defaults.yaml /home/$USERNAME/.colcon/defaults.yaml
+
 # Set some ROS 2 logging env variables in ~/.bashrc
 RUN echo 'export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity}] {file_name}:{line_number} - {message}"' >> ~/.bashrc
 RUN echo 'export RCUTILS_COLORIZED_OUTPUT=1' >> ~/.bashrc
