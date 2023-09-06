@@ -14,7 +14,7 @@ repositories:
   nao_lola:
     type: git
     url: git@github.com:ros-sports/nao_lola
-    version: rolling
+    version: ijnek-add-stamp
   nao_phase_provider:
     type: git
     url: git@github.com:ijnek/nao_phase_provider
