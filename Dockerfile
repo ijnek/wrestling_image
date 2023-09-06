@@ -63,7 +63,7 @@ SHELL ["/bin/bash", "-c"]
 # Enable flag to ignore the absence of the meshes and texture directories, used in nao_description's CMakeLists.txt
 ENV IGNORE_MESHES_AND_TEXTURE_DIRS=1
 # Source and build
-RUN source /opt/ros/rolling/setup.bash && colcon build --packages-ignore nao_lola
+RUN source /opt/ros/rolling/setup.bash && colcon build --packages-ignore nao_lola --cmake-args -DIGNORE_MESHES_AND_TEXTURE_DIRS=1
 
 # Change directory to user home
 WORKDIR /home/$USERNAME
