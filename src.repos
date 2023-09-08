@@ -13,7 +13,7 @@ repositories:
     version: rolling
   nao_lola:
     type: git
-    url: git@github.com:ros-sports/nao_lola
+    url: git@github.com:ijnek/nao_lola
     version: ijnek-add-stamp
   nao_phase_provider:
     type: git
