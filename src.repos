@@ -1,16 +1,16 @@
 repositories:
   biped_interfaces:
     type: git
-    url: git@github.com:ros-sports/biped_interfaces.git
+    url: git@github.com:ros-sports/biped_interfaces
     version: rolling
   humanoid_base_footprint:
     type: git
-    url: https://github.com/ros-sports/humanoid_base_footprint.git
+    url: git@github.com:ros-sports/humanoid_base_footprint
     version: master
   ipm:
     type: git
-    url: git@github.com:ros-sports/ipm
-    version: rolling
+    url: git@github.com:ijnek/ipm
+    version: catch-tf-extrapolation
   nao:
     type: git
     url: git@github.com:ijnek/nao
