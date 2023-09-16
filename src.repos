@@ -26,7 +26,7 @@ repositories:
   nao_phase_provider:
     type: git
     url: git@github.com:ijnek/nao_phase_provider
-    version: rolling
+    version: ijenk-timer-ensure-phase-change
   naosoccer_pos_action:
     type: git
     url: git@github.com:ijnek/naosoccer_pos_action
