@@ -30,7 +30,7 @@ repositories:
   naosoccer_pos_action:
     type: git
     url: git@github.com:ijnek/naosoccer_pos_action
-    version: rolling
+    version: ijnek-action
   walk:
     type: git
     url: git@github.com:ijnek/walk.git
