@@ -32,6 +32,9 @@ RUN sudo -E apt install webots -y
 # Clone WebotsLolaController
 # RUN git clone https://github.com/Bembelbots/WebotsLoLaController.git
 
+# Install pip
+RUN sudo -E apt install python3-pip -y
+
 # Copy ijnek_wrestle into container
 COPY --chown=$USERNAME:$USERNAME ijnek_wrestle ijnek_wrestle/.
 
